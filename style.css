@@ -70,7 +70,7 @@ nav a.active {
 }
 
 body.dark-mode nav a {
-    color: white; /* Couleur pour le mode sombre */
+    color:black; /* Couleur pour le mode sombre */
 }
 
 @media(max-width:995px) {
