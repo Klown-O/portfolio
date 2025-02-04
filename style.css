@@ -439,6 +439,7 @@ body.dark-mode button.theme-toggle i {
     transform: rotate(180deg);
 }
 
+
 @keyframes cursor {
     to {
         border-left: 3px solid #b74b4b;
@@ -460,5 +461,69 @@ body.dark-mode button.theme-toggle i {
     }
     81%, 100% {
         content: "Graphiste";
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+        max-width: 250px;
+    }
+
+    .typing-text {
+        font-size: 24px;
+    }
+
+    .social-icons a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.8rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        transition: right 0.3s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav a {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    .competences, .experiences {
+        padding: 15px;
+    }
+
+    .skills-grid, .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .art-box img {
+        width: 100%;
+        height: auto;
     }
 }
